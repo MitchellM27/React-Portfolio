@@ -2,10 +2,11 @@ import React from 'react';
 
 const styles = {
   headerStyle: {
-    background: 'red',
+    background: '#75ABBC',
+    color: "#071013"
   },
   headingStyle: {
-    fontSize: '100px',
+    fontSize: '35px',
   },
 };
 
@@ -13,7 +14,7 @@ const styles = {
 function Header() {
   return (
     <header style={styles.headerStyle} className="header">
-      <h1 style={styles.headingStyle}>Welcome</h1>
+      <h1 style={styles.headingStyle}>Mitchell Mudgett</h1>
     </header>
   );
 }
