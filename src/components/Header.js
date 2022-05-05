@@ -7,7 +7,12 @@ const styles = {
     color: "#071013",
     display: "flex",
     flexDirection: "horizontal",
-    width: "100vw"
+    width: "100vw",
+    padding: "1%"
+  },
+
+  headerName: {
+    padding: "1%",
   },
 
   navSection: {
@@ -22,13 +27,14 @@ function Header() {
   return (
     <header style={styles.headerStyle}>
       
-      <section>
+      <section style={styles.headerName}>
         <h1>Mitchell Mudgett</h1>
       </section>
 
       <section style={styles.navSection} className= "col-8">
         <Navigation/>
       </section>
+      
     </header>
   );
 }
