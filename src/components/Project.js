@@ -9,7 +9,7 @@ const styles = {
 };
 
 
-function Section() {
+function Project() {
   return (
     <section style={styles.sectionStyles} className="section">
       <h2>Projects</h2>
@@ -17,4 +17,4 @@ function Section() {
   );
 }
 
-export default Section;
+export default Project;
