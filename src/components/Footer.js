@@ -10,7 +10,14 @@ const styles = {
 function Footer() {
   return (
       <footer style={styles.footer}>
-          <h3>Footer</h3>
+          <ul>
+              <li>
+                  Github
+              </li>
+              <li>
+                  Linkdin
+              </li>
+          </ul>
       </footer>
   );
 }
