@@ -12,23 +12,18 @@ const styles = {
   },
 
   navItems: {
-    display: "inline-block",
-    justifyContent: "flex-end",
-    alignItems: "center",
-    marginLeft: "30px",
+    marginLeft: "2px",
   }
 };
 
-function Navigation() {
+function Navigation({currentPage, handlePageChange}) {
   return (
-    <section>
-      <ul style={styles.navBar}>
-        <li><a style= {styles.navItems}>About Me</a></li>
-        <li><a style= {styles.navItems}>Work</a></li>
-        <li><a style= {styles.navItems}>Contact Me</a></li>
-        <li><a style= {styles.navItems}>Resume</a></li>
-      </ul>
-    </section>       
+      <ul style={styles.navBar} className="nav">
+        <li className='nav-item'><a href="#about" onClick={() => handlePageChange('About')} className={currentPage === 'About' ? 'nav-link active' : 'nav-link'} style= {styles.navItems}>About Me</a></li>
+        <li className='nav-item'><a href="#project" onClick={() => handlePageChange('Project')} className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}style= {styles.navItems}>Projects</a></li>
+        <li className='nav-item'><a href="#contact" onClick={() => handlePageChange('Contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}style= {styles.navItems}>Contact Me</a></li>
+        <li className='nav-item'><a href="#resume" style= {styles.navItems}>Resume</a></li>
+      </ul>     
   );
 }
 
