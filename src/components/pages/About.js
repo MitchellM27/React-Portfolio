@@ -1,8 +1,14 @@
 import React from 'react';
 
+const styles = {
+  about: { 
+    background: '#75ABBC',
+  }
+};
+
 export default function About() {
   return (
-    <div>
+    <div style={styles.about}>
       <h1>About Me</h1>
       <p>
       My name is Mitchell Mudgett. I am from San Diego, CA and I am working on becoming a

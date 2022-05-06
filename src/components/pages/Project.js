@@ -12,7 +12,14 @@ const styles = {
 
   projectTitle: {
     justifyContent: "center"
+  },
+
+  projectsContainer: {
+    flexDirection: "horizontal",
+    flex: "wrap"
   }
+
+
 };
 
 
@@ -24,12 +31,17 @@ function Project() {
       </section>
 
       <section>
-        <div className="container">
-          <div>project1</div>
-          <div>project1</div>
-          <div>project1</div>
-          <div>project1</div>
-
+        <div style= {styles.projectsContainer} className="projectsContainer container d-flex justify-content-around">
+          <div className='row align-items-center'>
+            <div className='projectOne col'>project1</div>
+            <div className='projectTwo col'>project1</div>
+            <div className='projectThree col'>project1</div>
+          </div>
+          <div className='row align-items-center'>
+            <div className='projectFour col'>project1</div>
+            <div className='projectFive col'>project1</div>
+            <div className='projectSix col'>project1</div>
+          </div>
         </div>
       </section>
     </section>
