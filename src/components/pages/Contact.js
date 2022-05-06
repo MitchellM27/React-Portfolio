@@ -11,6 +11,7 @@ export default function Contact() {
     emailjs.sendForm('service_cm2flbt', 'template_dpgdt2i', form.current, 'uRuVfHW30wMmroqjL').then(res=>{
       console.log(res)
     }).catch(err=> console.log(err));
+    e.target.reset();
   }
 
   return (
