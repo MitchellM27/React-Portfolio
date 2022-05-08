@@ -14,15 +14,15 @@ export default function Resume() {
       <div>
           <h2> Proficiencies </h2>
           <ul>
-              <li> HTML </li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Node</li>
-              <li>Express</li>
-              <li>Sequelize</li>
-              <li>Progressive Web Applications</li>
-              <li>React</li>
-              <li>Mongo</li>
+            <li> HTML </li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Node</li>
+            <li>Express</li>
+            <li>Sequelize</li>
+            <li>Progressive Web Applications</li>
+            <li>React</li>
+            <li>Mongo</li>
           </ul>
       </div>
     </div>
